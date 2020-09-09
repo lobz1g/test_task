@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 	"log"
 	"os"
 
@@ -20,10 +19,6 @@ func init() {
 	_ = os.Setenv("DB_MIGRATE", *DB_MIGRATE)
 	_ = os.Setenv("PUSH_TOKEN", *PUSH_TOKEN)
 	_ = os.Setenv("PUSH_USER", *PUSH_USER)
-
-	fmt.Println(os.Getenv("PUSH_USER"))
-	fmt.Println(os.Getenv("PUSH_TOKEN"))
-	fmt.Println(os.Getenv("DB_MIGRATE"))
 }
 
 func main() {
