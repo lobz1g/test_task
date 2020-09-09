@@ -19,10 +19,10 @@ docker run -d -p 3000:3000 --env=DB_DSN="host=localhost user=postgres password=m
 ### Env
 
 1. `DB_DSN` - credentials for connecting to databse
-* `host` - address to database server
-* `user` - username
-* `password` - password
-* `dbname` - database name
-* `port` - port of database server
-* `sslmode` - SSL encryption
-* `TimeZone` - timezone of database (default is Etc/UTC)
+   * `host` - address to database server
+   * `user` - username
+   * `password` - password
+   * `dbname` - database name
+   * `port` - port of database server
+   * `sslmode` - SSL encryption
+   * `TimeZone` - timezone of database (default is Etc/UTC)
