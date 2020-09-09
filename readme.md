@@ -26,3 +26,25 @@ docker run -d -p 3000:3000 --env=DB_DSN="host=localhost user=postgres password=m
    * `port` - port of database server
    * `sslmode` - SSL encryption
    * `TimeZone` - timezone of database (default is Etc/UTC)
+   
+### Paths
+
+#### POST method `/send`
+Send notification.
+
+Body:
+
+```json
+{
+  "Text": "test"
+}
+```
+ 
+#### POST method `/count`
+
+Get group information about status codes after date.
+
+Body:
+```
+2020-09-09 16:09:54
+```
